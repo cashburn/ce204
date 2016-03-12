@@ -1,0 +1,14 @@
+POSITIONING OF PARENTHESES IN toString RESULT FOR ASSIGNMENT 2
+
+Parentheses are required around some operator nodes when they are children of other operator nodes; they are never needed
+around other types of nodes.
+
+Parentheses are needed around a + or - node if
+(i) it's the right child of any operator node
+(ii) it's the left child of any operator node other than + or -
+
+Parentheses are needed around a *, / or % node if
+(i) it's the right child of any operator node other than + or -
+(ii) it's the left child of a ^ node
+
+Parentheses are needed around a ^ node only if it's the left child of another ^ node
