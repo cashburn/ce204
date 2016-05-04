@@ -187,18 +187,17 @@ public class Parser
 
   static ExpTree makeLetTree(ExpTree l, ExpTree r)
   { // remove the following line if you modify this method; leave it here if you do not attempt part 6
-    System.out.println("Part 6 not attempted");
-    return null;
+    return new ExpTree(ExpTree.letNode, 0, l, r);
     // this method should return a new let node with children l and r
   }
 
   static ExpTree makeAndTree(ExpTree l, ExpTree r)
-  { return null;
+  { return new ExpTree(ExpTree.andNode, 0, l, r);
     // this method should return a new and node with children l and r
   }
 
   static ExpTree makeDefTree(char c, ExpTree t)
-  { return null;
+  { return new ExpTree(ExpTree.defNode, c, t, null);
     // this method should return a new definition node with identifier c and child t
     // if your definition nodes have 2 children you should put a new id leaf containing c in the left child and use t as the right child
   }
